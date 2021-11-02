@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="/home/sdiebolt/Documents/Work/misc-matlab/DMmisc.prj" location="/home/sdiebolt/Documents/Work/misc-matlab" name="DMmisc" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="2838901059" file="/home/sdiebolt/Documents/Work/DMmisc/DMmisc.prj" location="/home/sdiebolt/Documents/Work/DMmisc" name="DMmisc" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>DMmisc</param.appname>
     <param.authnamewatermark>Samuel Diebolt</param.authnamewatermark>
     <param.email />
@@ -7,7 +7,7 @@
     <param.summary>Miscellaneous functions for MATLAB</param.summary>
     <param.description>Miscellaneous functions for MATLAB that I often need for data analysis, signal processing, packaging, etc.</param.description>
     <param.screenshot />
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.output>${PROJECT_ROOT}/DMmisc.mltbx</param.output>
     <param.products.name />
     <param.products.id />
@@ -46,7 +46,6 @@
       <param.email />
       <param.company />
       <param.screenshot />
-      <param.version />
       <param.output />
       <param.products.name />
       <param.products.id />
@@ -81,14 +80,18 @@
       <file>${PROJECT_ROOT}</file>
     </fileset.rootdir>
     <fileset.rootfiles>
+      <file>${PROJECT_ROOT}/.gitignore</file>
       <file>${PROJECT_ROOT}/PoolWaitbar.m</file>
+      <file>${PROJECT_ROOT}/README.md</file>
       <file>${PROJECT_ROOT}/getFolderDependencies.m</file>
+      <file>${PROJECT_ROOT}/isWindowsAdmin.m</file>
+      <file>${PROJECT_ROOT}/symlink.m</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="DMmisc.mltbx" optional="false">/home/sdiebolt/Documents/Work/misc-matlab/DMmisc.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="DMmisc.mltbx" optional="false">/home/sdiebolt/Documents/Work/DMmisc/DMmisc.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
@@ -141,7 +144,7 @@
       <vista>false</vista>
       <linux>true</linux>
       <solaris>false</solaris>
-      <osver>5.11.0-37-generic</osver>
+      <osver>5.11.0-38-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>glnxa64</arch>
